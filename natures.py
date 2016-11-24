@@ -31,7 +31,6 @@ natures_df = pandas.read_csv('data/natures.csv')
 
 for index, row in natures_df.iterrows():
     nature = Nature()
-    #ability.id = row['id']
     nature.nature = row['nature']
     nature.attack = row['attack']
     nature.defense = row['defense']

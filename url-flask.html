@@ -1,0 +1,20 @@
+<html>
+<body>
+
+<h2>Grafico dos pokemon</h2>
+
+<p id="demo"></p>
+
+<script>
+var text = '{"employees":[' +
+'{"nature":"João Victor","lastName":"Dutra" },' +
+'{"firstName":"Daniel","lastName":"Tafuri" },' +
+'{"firstName":"Matheus","lastName":"Cândido" }]}';
+
+obj = JSON.parse(text);
+document.getElementById("demo").innerHTML =
+obj.employees[2].firstName + " " + obj.employees[2].lastName;
+</script>
+
+</body>
+</html>
